@@ -1,21 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" media="screen and (min-width: 0px)" href="small.css">
+
 
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="mobilstyle.css">
 <title>Mobil nettside</title>
 
 </head>
 
 <body>
+<div id="main-wrapper">
+<nav>	
+	<ul>
+		<span class="nav-button"></span>
+		<ul class="sidenav"">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">Facebook/Twitter</a></li>
+		</ul>
+		<li><a href="">Søkemotor</a>
+		<ul>
+			<li><a href="">søkebar</a></li>
+		</ul>
+		</li>
+		<li><a href="">HSA styles</a></li>
 
-<div id="wrapper">
-	hey
+		<li><a href="">Favourite</a></li>
+		<li><a href="">Shoppingcart</a></li>
+	</ul>
+
+
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$('span.nav-button').click(function () {
+
+		$('.sidenav').slideToggle();
+	})
+
+$(window).resize(function (){
+
+	if ( $(window).width() > 600 ) {
+
+		$('.sidenav').removeAttr('style');
+	}
+
+})
+
+</script>
+<img src=""> slideshow
+
+<div id="section-div">
+<section id="section">
+
+	<article id="article">
+		
+		<header id="article-header">
+			<h2></h2>
+		</header>
+		<p>
+			<img src=""> img 1
+			<img src=""> img 2
+			<img src=""> reklame
+			<img src=""> img 3
+			<img src=""> img 4
+
+
+431/523
+
+
+		</p>
+
+	</article>
+	
+</section>
+
+<aside id="aside-left">
+	<nav>
+		Kategorier
+	</nav>
+
+
+</aside>
+</div>
+
+<footer id="footer">
+Copyright
+</footer>
 
 
 </div>
-
-
 </body>
 </html>
