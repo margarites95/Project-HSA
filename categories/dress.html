@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" media="screen and (min-width: 421px)" href="small.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="medium.css">
+<link rel="stylesheet" media="screen and (min-width: 1224px)" href="large.css">
+<link rel="stylesheet" media="screen and (min-width: 1824px)" href="xl.css">
+<meta charset="utf-8">
+<title>HSA Styles</title>
+
+</head>
+
+<body>
+<div id="main-wrapper">
+<nav id="nav-main">
+<div id="nav-menu"> 
+ <ul>
+  <li class="nav-button"></li>
+  <li id="search" class ="meny"><a href="#"></a></li>
+  <li id="logo"><a href="index.html">HSA styles</a></li>
+  <ul class="sidenav">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="#">About</a></li>
+   <li><a href="#">Shop</a></li>
+   <li><a href="#">Facebook/Twitter</a></li>
+  </ul>
+  <li id="star" class ="meny"><a href="#"></a></li>
+  <li id="cart" class ="meny"><a href="#"></a></li>
+ </ul>
+</div>
+</nav>
+
+<style>
+h2{
+  color:black;
+}
+</style>
+<h2>Her kommer dresser</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$('.nav-button').click(function () {
+
+  $('.sidenav').slideToggle();
+ })
+
+$(document).ready(function() {
+    
+    $(window).resize(function() {
+       
+        if($(window).width() <= 1024) {
+            
+            $('#main-wrapper').show();
+        } else {
+            
+            $('#main-wrapper').hide();
+        }
+    }).resize();
+});
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(3000)
+    .next()
+    .fadeIn(3000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+
+</script>
+
+<div id="section-div">
+<section id="section">
+
+ <article id="article">
+<div class="slider">
+  <div>
+    <p>
+      New sales every week!
+    </p>
+    <p>
+      20% off jeans this week only!
+    </p>
+    <p>
+      HSA membership bonuses, register now!
+    </p>
+  </div>
+</div>
+<nav id="nav-kat">
+<div id="nav-katmenu">
+<div id="bilde1"></div>      
+        <header id="kat">Category</header>
+        <ul>
+           <li class ="meny"><a href="#">Jackets</a></li> 
+           <li class ="meny"><a href="#">Shoes</a></li> 
+           <li class ="meny"><a href="#">Scarfs</a></li> 
+           <li class ="meny"><a href="#">Shirts</a></li> 
+           <li class ="meny"><a href="#">Hoodies</a></li> 
+           <li class ="meny"><a href="#">Jeans</a></li>
+           <li class ="meny"><a href="#">Suits</a></li> 
+       </ul> 
+
+
+
+
+<footer id="footer">
+Copyright HSA styles
+</footer>
+
+
+</div>
+</body>
+</html>
+
+  
