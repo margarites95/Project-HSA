@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" media="screen and (min-width: 421px)" href="small.css">
+<link rel="stylesheet" media="screen and (min-width: 801px)" href="medium.css">
+<link rel="stylesheet" media="screen and (min-width: 1024px)" href="large.css">
+<link rel="stylesheet" media="screen and (min-width: 1824px)" href="xl.css">
+<meta charset="utf-8">
+<title>Mobil nettside</title>
+
+</head>
+
+<body>
+<div id="main-wrapper">
+<nav id="nav-main">
+<div id="nav-menu">	
+	<ul>
+		<li class="nav-button"></li>
+		<li id="search" class ="meny"><a href="#"></a></li>
+		<li id="logo"><a href="index.html">HSA styles</a></li>
+		<ul class="sidenav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="https://www.facebook.com/Alankaradakhy?fref=ts">Facebook/Twitter</a></li>
+		</ul>
+		<li id="about" class="meny"><a href="about.html">About</a></li>
+		<li id="facebook" class="meny"><a href="https://www.facebook.com/Alankaradakhy?fref=ts">Facebook</a></li>
+		<li id="star" class ="meny"><a href="#"></a></li>
+		<li id="cart" class ="meny"><a href="#"></a></li>
+	</ul>
+</div>
+</nav>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$('.nav-button').click(function () {
+
+		$('.sidenav').slideToggle();
+	})
+
+$(document).ready(function() {
+    
+    $(window).resize(function() {
+       
+        if($(window).width() <= 1024) {
+            
+            $('.nav-button').show();
+        } else {
+            
+            $('.nav-button').hide();
+        }
+    }).resize();
+});
+
+$(document).ready(function() {
+    
+    $(window).resize(function() {
+       
+        if($(window).width() <= 1024) {
+            
+            $('#search').show();
+        } else {
+            
+            $('#search').hide();
+        }
+    }).resize();
+});
+
+$(document).ready(function() {
+    
+    $(window).resize(function() {
+       
+        if($(window).width() >= 1024) {
+            
+            $('#about').show();
+        } else {
+            
+            $('#about').hide();
+        }
+    }).resize();
+});
+
+$(document).ready(function() {
+    
+    $(window).resize(function() {
+       
+        if($(window).width() >= 1024) {
+            
+            $('#facebook').show();
+        } else {
+            
+            $('#facebook').hide();
+        }
+    }).resize();
+});
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(3000)
+    .next()
+    .fadeIn(3000)
+    .end()
+    .appendTo('#slideshow');
+},  5000);
+
+$("#slideshow1 > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow1 > div:first')
+    .fadeOut(3000)
+    .next()
+    .fadeIn(3000)
+    .end()
+    .appendTo('#slideshow1');
+},  5000);
+
+</script>
+
+<div id="section-div">
+<section id="section">
+
+	<article id="article">
+<div class="slider">
+  <div>
+    <p>
+      New sales every week!
+    </p>
+    <p>
+      20% off jeans this week only!
+    </p>
+    <p>
+      HSA membership bonuses, register now!
+    </p>
+  </div>
+</div>
+<nav id="nav-kat">
+<div id="nav-katmenu">
+<div id="bilde1"></div>      
+        <header id="kat">Category</header>
+        <ul>
+           <li class ="meny"><a href="jakker.html">Jackets</a></li> 
+           <li class ="meny"><a href="sko.html">Shoes</a></li> 
+           <li class ="meny"><a href="skjerf.html">Scarfs</a></li> 
+           <li class ="meny"><a href="skjorter.html">Shirts</a></li> 
+           <li class ="meny"><a href="gensere.html">Hoodies</a></li> 
+           <li class ="meny"><a href="jeans.html">Jeans</a></li>
+           <li class ="meny"><a href="dress.html">Suits</a></li> 
+       </ul> 
+
+
+ <div id="slideshow" style="max-width:600px">
+   <div class="news">  User favourites this week
+     <img src="pic3.jpg" style="max-width: 100%" alt="slideshow bilde1">
+   </div>
+   <div class="news">  User favourites this week
+     <img src="pic2.jpg" style="max-width: 100%" alt="slideshow bilde2">
+   </div>
+   <div class="news">  User favourites this week
+     <img src="pic4.jpg" style="max-width: 100%" alt="slideshow bilde3">
+   </div>
+ </div>
+
+ <div id="slideshow1" style="max-width:600px">
+   <div class="news"> New clothes 
+     <img src="pic5.jpg" style="max-width: 100%" alt="slideshow bilde4">
+   </div>
+   <div class="news"> New clothes 
+     <img src="pic6.jpg" style="max-width: 100%" alt="slideshow bilde5">
+   </div>
+   <div class="news"> New clothes  
+     <img src="pic7.jpg" style="max-width: 100%" alt="slideshow bilde6">
+   </div>
+ </div>
+
+ 
+
+        
+</div>
+</nav>		
+	</article>
+</section>
+</div>
+
+
+<footer id="footer">
+Copyright HSA styles
+</footer>
+
+
+</div>
+</body>
+</html>

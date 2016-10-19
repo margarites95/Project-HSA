@@ -1,0 +1,238 @@
+body {
+  font-family: arial, sans-serif;
+  max-width: 100%;
+  color:white;
+}
+
+#main-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+header, #main-wrapper, nav, aside, footer, article, #nav-katmenu, div, #kat, #nav-kat {
+  flex: 1 100%;
+}
+.sidenav {
+    background-color: #333;
+    color:#FFF;
+    margin:0;
+    list-style: none;
+    text-align:center;
+}
+
+.sidenav > li {
+    display: inline-block;
+
+}
+
+
+.sidenav > li > a {
+    text-decoration: none;
+    font-size: 40px;
+    color:#FFF;
+}
+#nav-menu {
+     margin: 0 auto;
+     text-align: center;
+     width: 100%;
+     background-color: #222327;
+     
+}
+
+#nav-main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 353px;
+}
+
+#nav-main ul li {
+    display: inline-block;
+}
+
+#nav-main ul li a, visited {
+    color:white;
+    display: block;
+    padding:10px;
+    text-decoration: none;
+}
+
+#nav-main ul li:hover ul {
+    display: block;
+}
+
+#nav-main ul ul {
+    display: none;
+    position: absolute;
+    background-color: #222327;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: -5px;
+}
+
+#nav-main ul ul li {
+    display: block;
+    border: solid black 1px;
+}
+
+#nav-main ul ul li a:hover {
+    color: black;
+}
+
+#logo {
+    font-size: 40px;
+}
+
+   .meny {
+    font-size: 24px;
+   }
+
+.slider {
+  height: 20px;
+  font-size: 16px;
+  overflow: hidden;
+  background-color: #bdc7c9;
+  text-align: center;
+}
+
+.slider div, .slider div p {
+  margin: 0;
+  padding: 0;
+}
+
+.slider div {
+  animation: slide 10s 2s infinite;
+} 
+
+@keyframes slide {
+  0% { margin-top: 0; }
+  25% { margin-top: -18px; }
+  50% { margin-top: -36px; }
+  75% { margin-top: -54px; }
+  100% { margin-top: 0; }
+}
+
+#bilde1{
+    background: url(pic1.jpg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+   .sidenav {
+    text-align:center;
+    display: none;
+
+   }
+
+   .sidenav > li {
+    display: block;
+   }
+
+   .nav-button{
+    display: block;
+    background-color:#222327;
+    color:#FFF;
+    font-size:40px;
+    text-align: left;
+    cursor:pointer;
+    width: 70px;
+    height: 70px;
+   }
+
+   .nav-button:before {
+
+    content: url('icon.jpg');
+    width: 70px;
+    height: 70px;
+
+   }
+
+
+#nav-katmenu {
+     margin: 0 auto;
+     text-align: center;
+     width: 100%;
+     background-color: #222327;
+     
+}  
+
+#nav-kat ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-width: 353px;
+}
+
+#nav-kat ul li {
+    display: inline-block;
+}
+
+#nav-kat ul li a, visited {
+    color:white;
+    display: block;
+    padding:10px;
+    text-decoration: none;
+}
+
+#nav-kat ul li:hover ul {
+    display: block;
+}
+
+#nav-kat ul ul {
+    display: none;
+    position: absolute;
+    background-color: #222327;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: -5px;
+}
+
+#nav-kat ul ul li {
+    display: block;
+    border: solid black 1px;
+}
+
+#nav-kat ul ul li a:hover {
+    color: black;
+}
+
+#kat {
+  font-size:40px;
+}
+
+.news {
+  font-size:40px;
+  background-color: #bdc7c9;
+}
+
+#slideshow { 
+    position: relative; 
+    height: 320px;
+    width: 900px;
+    margin:0 auto;
+}
+
+#slideshow > div { 
+    position: absolute; 
+}
+
+#slideshow1 { 
+    position: relative; 
+    height: 1000px;
+    width: 900px;
+    margin:0 auto;
+}
+
+#slideshow1 > div { 
+    position: absolute; 
+}
+
+#footer {
+  background-color: #222327;
+  text-align: center;
+  border:solid #bdc7c9 1px;
+}
